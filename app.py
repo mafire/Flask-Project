@@ -17,13 +17,13 @@ def hello():
     return render_template("index.html")
 
 #create links to different ruotes by making method after path
-@app.route("/1006")
-def t1006():
-    return render_template("1006.html")
+@app.route("/projects")
+def proj():
+    return render_template("projects.html")
 
-@app.route("/columbia")
-def columbia():
-    return "Columbia!!"
+@app.route("/experience")
+def exp():
+    return render_template("experience.html")
 #start the server
 if __name__ == "__main__":
     app.run()  
